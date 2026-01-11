@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | The National Chronicle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Franklin:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS INTERNAL STYLES */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Libre Franklin', sans-serif; color: #333; line-height: 1.6; background-color: #fff; margin: 0; padding: 0; }
+
+        /* 1. SUPER THICK TITLE */
+        .logo-text { 
+            font-family: 'Playfair Display', serif; 
+            font-weight: 900; 
+            font-size: 3.8rem; /* Bigger */
+            color: #000; 
+            text-transform: uppercase;
+            /* This adds a fake "Bold" stroke to make it super thick */
+            text-shadow: 2px 2px 0px #000; 
+            letter-spacing: -1px;
+            margin-bottom: 5px;
+        }
+
+        .sub-logo {
+            font-family: 'Libre Franklin', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        /* 2. BLACK TICKER BOX */
+        .news-ticker-container {
+            width: 100%;
+            background-color: #000; /* Solid Black */
+            color: #fff;
+            padding: 12px 0; /* Height of bar */
+            border-top: 4px solid #000;
+            border-bottom: 4px solid #000;
+            font-family: 'Libre Franklin', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        /* Red Label Box */
+        .ticker-label {
+            background-color: #dc3545; 
+            color: white;
+            padding: 4px 10px;
+            font-weight: 900;
+            font-size: 0.9rem;
+            margin-right: 10px;
+            margin-left: 50px;
+            display: inline-block;
+        }
+
+        /* HEADINGS & NAV */
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .headline-big { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.5rem; line-height: 1.1; color: #000; }
+        .section-heading { font-family: 'Playfair Display', serif; font-weight: 900; text-transform: uppercase; font-size: 1.5rem; border-bottom: 3px solid #eee; padding-bottom: 15px; margin-bottom: 25px; }
+        
+        .nav-link { font-weight: 900; font-size: 0.95rem; color: #222 !important; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-link:hover, .nav-link.active { color: #b9090b !important; }
+        .navbar-toggler { border: 3px solid #000; }
+        .img-fluid { transition: opacity 0.3s; } .img-fluid:hover { opacity: 0.9; }
+        .map-container iframe { width: 100%; height: 500px; border: 2px solid #ddd; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar py-2 bg-light border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span class="small text-muted fw-bold">Saturday, January 10, 2026 | Hyderabad, India</span>
+            <div class="d-flex gap-2">
+                <a href="#" class="text-dark small fw-bold text-decoration-none border-end pe-2">LOGIN</a>
+                <a href="#" class="text-danger small fw-bold text-decoration-none">SUBSCRIBE</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="text-center py-5 bg-white">
+        <div class="container">
+            <h1 class="logo-text">The National Chronicle</h1>
+            <p class="sub-logo">Journalism of Courage & Truth • Est. 1924</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-white border-top border-dark border-4">
+        <div class="container">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navContent">
+                <ul class="navbar-nav text-center gap-5 pt-3 pt-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="business.html">BUSINESS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="news-ticker-container">
+        <marquee behavior="scroll" direction="left" scrollamount="12">
+            <span class="ticker-label">BREAKING</span> Digital India 2.0 announced with ₹50,000 Crore budget.
+            <span class="ticker-label">WORLD</span> US and China sign new trade agreement.
+            <span class="ticker-label">SPORTS</span> India defeats Australia in 3rd Test Match at Wankhede.
+            <span class="ticker-label">BUSINESS</span> Sensex touches historic 80,000 mark.
+        </marquee>
+    </div>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 border-end pe-lg-5">
+                <article class="mb-5">
+                    <img src="https://picsum.photos/id/180/800/450" class="img-fluid mb-3 w-100" alt="Main News">
+                    <span class="badge bg-danger rounded-0 mb-2">INFRASTRUCTURE</span>
+                    <h2 class="headline-big mt-2 mb-3">Government Unveils 'Digital Bharat 2.0' to Connect 500 Districts</h2>
+                    <div class="d-flex justify-content-between border-bottom pb-3 mb-3">
+                        <span class="small fw-bold text-dark">By Leela Vennu</span>
+                        <span class="small text-muted">Updated: 10:30 AM IST</span>
+                    </div>
+                    
+                    <p class="lead" style="font-weight: 600;">The Central Government today launched the ambitious "Digital Bharat 2.0" initiative, pledging a massive investment of ₹50,000 Crores. The primary goal is to ensure high-speed fiber optic connectivity reaches the remotest 500 districts of the country within the next 18 months.</p>
+                    
+                    <p>Speaking at the press conference in New Delhi, the Minister of Technology emphasized that internet access is no longer a luxury but a fundamental right. "We are building the highways of the future," he stated. This follows the successful completion of Phase 1, which connected 200 urban centers. The project aims to bridge the digital divide that has long separated rural India from its urban counterparts.</p>
+                    
+                    <p>Experts predict this will boost rural GDP by 3% within the next fiscal year by enabling e-commerce, telemedicine, and online education. However, opposition leaders have asked for a clearer roadmap regarding the timeline of implementation, citing delays in previous infrastructure projects. Despite the criticism, telecom stocks rallied by 5% in early trade as investors welcomed the news.</p>
+                </article>
+            </div>
+
+            <div class="col-lg-4 ps-lg-4">
+                <div class="bg-light p-4 mb-4 border">
+                    <h5 class="section-heading text-danger border-0 mb-3" style="font-size: 1.2rem;">Trending Now</h5>
+                    <ol class="ps-3 fw-bold">
+                        <li class="mb-3">Gold Prices drop by ₹500</li>
+                        <li class="mb-3">New Metro Line opening tomorrow</li>
+                        <li class="mb-3">Oscars 2026 Nominations list</li>
+                        <li class="mb-3">Tech giant announces layoffs</li>
+                        <li class="mb-3">Election Commission announces dates</li>
+                    </ol>
+                </div>
+                
+                <div class="mb-4">
+                    <img src="https://picsum.photos/id/1015/400/250" class="img-fluid mb-2 w-100" alt="Weather">
+                    <h5 class="fw-bold font-serif">Monsoon Update</h5>
+                    <p class="small text-muted">Heavy rains predicted for coastal Andhra and Telangana over the next 48 hours. Fisherman advised to stay ashore.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-5 text-center mt-auto">
+        <h2 class="font-serif fw-bold" style="font-size: 2rem;">The National Chronicle</h2>
+        <p class="small text-secondary mb-0">© 2026. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

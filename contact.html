@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | The National Chronicle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Franklin:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* SAME CSS */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Libre Franklin', sans-serif; color: #333; line-height: 1.6; background-color: #fff; margin: 0; padding: 0; }
+        .logo-text { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 3.8rem; color: #000; text-transform: uppercase; text-shadow: 2px 2px 0px #000; letter-spacing: -1px; margin-bottom: 5px; }
+        .sub-logo { font-family: 'Libre Franklin', sans-serif; font-weight: 700; font-size: 0.85rem; letter-spacing: 3px; color: #555; text-transform: uppercase; }
+        .news-ticker-container { width: 100%; background-color: #000; color: #fff; padding: 12px 0; border-top: 4px solid #000; border-bottom: 4px solid #000; font-family: 'Libre Franklin', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 1rem; }
+        .ticker-label { background-color: #dc3545; color: white; padding: 4px 10px; font-weight: 900; font-size: 0.9rem; margin-right: 10px; margin-left: 50px; display: inline-block; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .headline-big { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.5rem; line-height: 1.1; color: #000; }
+        .section-heading { font-family: 'Playfair Display', serif; font-weight: 900; text-transform: uppercase; font-size: 1.5rem; border-bottom: 3px solid #eee; padding-bottom: 15px; margin-bottom: 25px; }
+        .nav-link { font-weight: 900; font-size: 0.95rem; color: #222 !important; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-link:hover, .nav-link.active { color: #b9090b !important; }
+        .navbar-toggler { border: 3px solid #000; }
+        .img-fluid { transition: opacity 0.3s; } .img-fluid:hover { opacity: 0.9; }
+        .map-container iframe { width: 100%; height: 500px; border: 2px solid #ddd; }
+    </style>
+</head>
+<body>
+    <header class="text-center py-5 bg-white">
+        <div class="container">
+            <h1 class="logo-text">The National Chronicle</h1>
+            <p class="sub-logo">Journalism of Courage & Truth • Est. 1924</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-white border-top border-dark border-4">
+        <div class="container">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navContent">
+                <ul class="navbar-nav text-center gap-5 pt-3 pt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="business.html">BUSINESS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="news-ticker-container">
+        <marquee behavior="scroll" direction="left" scrollamount="12">
+            <span class="ticker-label">CONTACT</span> Reach our helpdesk at +91 40 1234 9999     Email: support@chronicle.com     Visit our Hyderabad Office.
+        </marquee>
+    </div>
+
+    <main class="container my-5">
+        <div class="row g-0 border shadow-sm">
+            <div class="col-lg-5 bg-dark text-white p-5 d-flex flex-column justify-content-center">
+                <h2 class="headline-big text-white mb-4">Get in Touch</h2>
+                
+                <div class="mb-4">
+                    <label class="text-secondary small text-uppercase fw-bold" style="letter-spacing: 2px;">Editor-in-Chief</label>
+                    <div class="fs-4 fw-bold mt-1 font-serif">Leela Vennu</div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="text-secondary small text-uppercase fw-bold" style="letter-spacing: 2px;">Email Address</label>
+                    <div class="fs-5 mt-1">leela@chronicle.com</div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="text-secondary small text-uppercase fw-bold" style="letter-spacing: 2px;">Office Location</label>
+                    <div class="fs-5 mt-1">
+                        Plot No. 42, Jubilee Hills,<br>Hyderabad, Telangana 500033
+                    </div>
+                </div>
+
+                <div class="mt-4 pt-4 border-top border-secondary">
+                    <p class="small text-secondary">
+                        For press inquiries, advertising, or complaints, please reach out to our sales team directly.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3160407062!2d78.24323067868596!3d17.41229980042456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1715423851001!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-8">
+                <h3 class="section-heading text-center border-0">Send us a Message</h3>
+                <form class="p-5 border bg-white shadow-sm">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold small text-uppercase">Your Name</label>
+                            <input type="text" class="form-control p-3 bg-light border-0" placeholder="Leela Vennu" value="Leela Vennu">
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold small text-uppercase">Email Address</label>
+                            <input type="email" class="form-control p-3 bg-light border-0" placeholder="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-bold small text-uppercase">Message</label>
+                        <textarea class="form-control p-3 bg-light border-0" rows="5"></textarea>
+                    </div>
+                    <button class="btn btn-danger w-100 rounded-0 py-3 fw-bold" style="letter-spacing: 2px;">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-5 text-center mt-auto">
+        <h2 class="font-serif fw-bold" style="font-size: 2rem;">The National Chronicle</h2>
+        <p class="small text-secondary mb-0">© 2026. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

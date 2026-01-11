@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | The National Chronicle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Franklin:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* SAME CSS */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Libre Franklin', sans-serif; color: #333; line-height: 1.6; background-color: #fff; margin: 0; padding: 0; }
+        .logo-text { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 3.8rem; color: #000; text-transform: uppercase; text-shadow: 2px 2px 0px #000; letter-spacing: -1px; margin-bottom: 5px; }
+        .sub-logo { font-family: 'Libre Franklin', sans-serif; font-weight: 700; font-size: 0.85rem; letter-spacing: 3px; color: #555; text-transform: uppercase; }
+        .news-ticker-container { width: 100%; background-color: #000; color: #fff; padding: 12px 0; border-top: 4px solid #000; border-bottom: 4px solid #000; font-family: 'Libre Franklin', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 1rem; }
+        .ticker-label { background-color: #dc3545; color: white; padding: 4px 10px; font-weight: 900; font-size: 0.9rem; margin-right: 10px; margin-left: 50px; display: inline-block; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .headline-big { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.5rem; line-height: 1.1; color: #000; }
+        .section-heading { font-family: 'Playfair Display', serif; font-weight: 900; text-transform: uppercase; font-size: 1.5rem; border-bottom: 3px solid #eee; padding-bottom: 15px; margin-bottom: 25px; }
+        .nav-link { font-weight: 900; font-size: 0.95rem; color: #222 !important; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-link:hover, .nav-link.active { color: #b9090b !important; }
+        .navbar-toggler { border: 3px solid #000; }
+        .img-fluid { transition: opacity 0.3s; } .img-fluid:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <header class="text-center py-5 bg-white">
+        <div class="container">
+            <h1 class="logo-text">The National Chronicle</h1>
+            <p class="sub-logo">Journalism of Courage & Truth • Est. 1924</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-white border-top border-dark border-4">
+        <div class="container">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navContent">
+                <ul class="navbar-nav text-center gap-5 pt-3 pt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="business.html">BUSINESS</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="news-ticker-container">
+        <marquee behavior="scroll" direction="left" scrollamount="12">
+            <span class="ticker-label">ABOUT US</span> Celebrating 102 Years of Journalism.     Winner of the 'Best Digital News Platform' Award 2025.
+        </marquee>
+    </div>
+
+    <main class="container my-5">
+        <section class="bg-white border p-5 mb-5 shadow-sm">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center border-end">
+                    <img src="https://picsum.photos/id/447/400/400" class="img-fluid rounded-circle shadow-sm mb-4 border border-3" alt="Editor" style="max-width: 220px;">
+                    <h3 class="fw-bold font-serif mb-1">Leela Vennu</h3>
+                    <p class="text-danger small fw-bold text-uppercase" style="letter-spacing: 2px;">Editor-in-Chief</p>
+                </div>
+                <div class="col-md-8 ps-md-5">
+                    <h2 class="section-heading mb-4">A Legacy of Trust</h2>
+                    <p class="lead text-dark mb-4">
+                        Founded in 1924, The National Chronicle has stood as a pillar of democracy for over 100 years. We began as a small weekly pamphlet during the independence movement and have grown into a digital powerhouse.
+                    </p>
+                    <p class="text-secondary mb-4">
+                        Under the visionary leadership of <strong>Leela Vennu</strong>, our mission is to provide unbiased, accurate, and timely news. We do not bow to corporate interests or political pressure. Our loyalty is to the citizens.
+                    </p>
+                    <p class="text-secondary">
+                        Today, we employ over 500 fearless journalists across 20 state bureaus. From the bustling streets of Mumbai to the remote villages of the Northeast, our reporters are on the ground, bringing you stories that matter.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="row text-center mb-5">
+            <div class="col-md-3">
+                <h2 class="display-4 fw-bold font-serif">102</h2>
+                <p class="text-muted text-uppercase small fw-bold">Years of Service</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="display-4 fw-bold font-serif">50M+</h2>
+                <p class="text-muted text-uppercase small fw-bold">Monthly Readers</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="display-4 fw-bold font-serif">20</h2>
+                <p class="text-muted text-uppercase small fw-bold">State Bureaus</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="display-4 fw-bold font-serif">24/7</h2>
+                <p class="text-muted text-uppercase small fw-bold">Live Coverage</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-5 text-center mt-auto">
+        <h2 class="font-serif fw-bold" style="font-size: 2rem;">The National Chronicle</h2>
+        <p class="small text-secondary mb-0">© 2026. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

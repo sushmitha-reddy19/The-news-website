@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business | The National Chronicle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Franklin:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Libre Franklin', sans-serif; color: #333; line-height: 1.6; background-color: #fff; margin: 0; padding: 0; }
+        .logo-text { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 3.8rem; color: #000; text-transform: uppercase; text-shadow: 2px 2px 0px #000; letter-spacing: -1px; margin-bottom: 5px; }
+        .sub-logo { font-family: 'Libre Franklin', sans-serif; font-weight: 700; font-size: 0.85rem; letter-spacing: 3px; color: #555; text-transform: uppercase; }
+        .news-ticker-container { width: 100%; background-color: #000; color: #fff; padding: 12px 0; border-top: 4px solid #000; border-bottom: 4px solid #000; font-family: 'Libre Franklin', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 1rem; }
+        .ticker-label { background-color: #dc3545; color: white; padding: 4px 10px; font-weight: 900; font-size: 0.9rem; margin-right: 10px; margin-left: 50px; display: inline-block; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .headline-big { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.5rem; line-height: 1.1; color: #000; }
+        .section-heading { font-family: 'Playfair Display', serif; font-weight: 900; text-transform: uppercase; font-size: 1.5rem; border-bottom: 3px solid #eee; padding-bottom: 15px; margin-bottom: 25px; }
+        .nav-link { font-weight: 900; font-size: 0.95rem; color: #222 !important; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-link:hover, .nav-link.active { color: #b9090b !important; }
+        .navbar-toggler { border: 3px solid #000; }
+        .img-fluid { transition: opacity 0.3s; } .img-fluid:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+    
+    <header class="text-center py-5 bg-white">
+        <div class="container">
+            <h1 class="logo-text">The National Chronicle</h1>
+            <p class="sub-logo">Journalism of Courage & Truth • Est. 1924</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-white border-top border-dark border-4">
+        <div class="container">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navContent">
+                <ul class="navbar-nav text-center gap-5 pt-3 pt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="business.html">BUSINESS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="news-ticker-container">
+        <marquee behavior="scroll" direction="left" scrollamount="12">
+            <span class="ticker-label">MARKET UPDATE</span> Sensex: 80,000 (▲ 1.2%)     Nifty: 24,500 (▲ 0.9%)     Gold: ₹62,000 (▼ 0.5%)     USD/INR: 83.40
+        </marquee>
+    </div>
+
+    <main class="container my-5">
+        <h2 class="section-heading text-primary">Business & Economy</h2>
+        <div class="row g-5">
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="https://picsum.photos/id/20/600/350" class="card-img-top" alt="Office">
+                    <div class="card-body p-4">
+                        <span class="badge bg-primary mb-2 rounded-0">STARTUPS</span>
+                        <h3 class="headline-big" style="font-size: 1.8rem;">Tech Startups See Record Funding Boom</h3>
+                        <p class="card-text text-secondary mt-3">Venture capital investments in Indian AI-driven startups have doubled in the last quarter, reaching a record high of $2 Billion. Analysts suggest that the global interest in generative AI is fueling this surge. Bangalore continues to lead the pack, accounting for 60% of total deal volume.</p>
+                        <p class="card-text text-secondary">However, experts warn of a potential bubble. "Valuations are skyrocketing without clear revenue models," cautioned a leading economist. Despite this, hiring in the sector has increased by 15% month-on-month.</p>
+                        <button class="btn btn-outline-dark btn-sm rounded-0 mt-2 fw-bold">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="https://picsum.photos/id/3/600/350" class="card-img-top" alt="Laptop">
+                    <div class="card-body p-4">
+                        <span class="badge bg-success mb-2 rounded-0">CORPORATE</span>
+                        <h3 class="headline-big" style="font-size: 1.8rem;">New Work-From-Home Guidelines</h3>
+                        <p class="card-text text-secondary mt-3">Major IT giants including TCS and Infosys are revising their remote work policies for the fiscal year 2026. The new "Hybrid 3.0" model mandates employees to be in the office for at least three days a week, aiming to foster better team collaboration.</p>
+                        <p class="card-text text-secondary">Employee unions have pushed back, citing commute times and productivity loss. A recent survey showed that 70% of developers prefer full remote work. Management, however, insists that face-to-face interaction is crucial for innovation.</p>
+                        <button class="btn btn-outline-dark btn-sm rounded-0 mt-2 fw-bold">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-5 text-center mt-auto">
+        <h2 class="font-serif fw-bold" style="font-size: 2rem;">The National Chronicle</h2>
+        <p class="small text-secondary mb-0">© 2026. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
